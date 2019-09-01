@@ -2,7 +2,7 @@
 
 namespace caMcsdPractice.ChapterOne
 {
-    class chapterone
+    public class chapterone
     {
         public chapterone()
         {
@@ -39,7 +39,7 @@ namespace caMcsdPractice.ChapterOne
             //haibo value to huge for byte!
         }
 
-        void myMethodRocks()
+        public void SwitchAndStuff()
         {
             mxolisi mxo = mxolisi.supperHappy;
             switch (mxo)
@@ -80,12 +80,7 @@ namespace caMcsdPractice.ChapterOne
             }
         }
 
-        class Person
-        {
-            public Person() => runTown();
 
-            public virtual void runTown() => Debug.WriteLine("Im from the parent my... Person's constructor.");
-        }
 
         class Employee : Person
         {
