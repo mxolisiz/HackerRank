@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace caHackerRankTest.ChapterOne
+namespace caMcsdPractice.ChapterOne
 {
     class chapterone
     {

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace caHackerRankTest
+namespace caMcsdPractice
 {
     class Solution
     {
-        //fix 3 lines only for it to tell you location of valu in array
+        //fix 3 lines only for it to tell you location of value in array
         public int solution(int[] myArray, int valu)
         {
             int N = myArray.Length;//5

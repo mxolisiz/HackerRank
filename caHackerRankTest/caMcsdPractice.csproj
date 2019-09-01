@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B06F5323-491E-4E20-9498-0F4935F63A36}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>caHackerRankTest</RootNamespace>
-    <AssemblyName>caHackerRankTest</AssemblyName>
+    <RootNamespace>caMcsdPractice</RootNamespace>
+    <AssemblyName>caMcsdPractice</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChapterOne\chapterone.cs" />
+    <Compile Include="ChapterOne\moreCode.cs" />
+    <Compile Include="ChapterOne\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solution.cs" />

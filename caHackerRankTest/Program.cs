@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
-namespace caHackerRankTest
+namespace caMcsdPractice
 {
     class Program
     {
         static void Main(string[] args)
         {
             ChapterOne.chapterone ch1 = new ChapterOne.chapterone();
-            
+
+            ChapterOne.moreCode moreCode = new ChapterOne.moreCode();
+            Debug.WriteLine(moreCode.ToString());
 
             Solution solution = new Solution();
             solution.TestMove("fares", "fears");
