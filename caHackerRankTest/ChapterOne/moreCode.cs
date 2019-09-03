@@ -9,9 +9,19 @@ namespace caMcsdPractice.ChapterOne
             //initCode();
         }
 
+
+
+        public void Swap<T>(ref T valueOne, ref T valueTwo)
+        {
+            T temp = valueOne;
+            valueOne = valueTwo;
+            valueTwo = temp;
+        }
+
         public void initCode()
         {
             Person person = new Person();
+
             int age = 50;
             PassValueTypeByRef(person, ref age);
             Debug.WriteLine($"{person.name} , {age}");

@@ -10,8 +10,12 @@ namespace caMcsdPractice.ChapterOne.Tests
         [TestMethod()]
         public void SwitchAndStuffTest()
         {
-            
-            Assert.Fail();
+            //Arrange
+            chapterone ch1 = new chapterone();
+            //Act
+            byte returnVar=ch1.SwitchAndStuff(chapterone.mxolisi.excited);
+            //Assert
+            Assert.AreEqual((byte)chapterone.mxolisi.excited, returnVar);
         }
     }
 }

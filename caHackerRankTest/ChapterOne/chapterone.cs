@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 
 namespace caMcsdPractice.ChapterOne
 {
@@ -28,7 +29,7 @@ namespace caMcsdPractice.ChapterOne
 
         }
 
-        enum mxolisi : byte
+        public enum mxolisi : byte
         {
             happy = 250,
             supperHappy,
@@ -39,27 +40,26 @@ namespace caMcsdPractice.ChapterOne
             //haibo value to huge for byte!
         }
 
-        public void SwitchAndStuff()
+        public byte SwitchAndStuff(mxolisi val)
         {
-            mxolisi mxo = mxolisi.supperHappy;
-            switch (mxo)
+            switch (val)
             {
                 case mxolisi.happy:
-                    break;
+                    return (byte)mxolisi.happy;
                 case mxolisi.supperHappy:
-                    break;
+                    return (byte)mxolisi.supperHappy;
                 case mxolisi.excited:
-                    break;
+                    return (byte)mxolisi.excited;
                 case mxolisi.superExcited:
-                    break;
+                    return (byte)mxolisi.superExcited;
                 case mxolisi.angry:
-                    break;
+                    return (byte)mxolisi.happy;
                 case mxolisi.veryAngry:
-                    break;
+                    return (byte)mxolisi.happy;
                 default:
                     break;
             }
-            int theNUmbers = 254;
+            byte theNUmbers = 254;
             switch (theNUmbers)
             {
                 case 1:
@@ -78,6 +78,7 @@ namespace caMcsdPractice.ChapterOne
                     Debug.WriteLine("Default hit!");
                     break;
             }
+            return theNUmbers;
         }
 
 
