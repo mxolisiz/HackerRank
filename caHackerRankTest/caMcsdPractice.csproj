@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChapterOne\chapterone.cs" />
+    <Compile Include="ChapterOne\Class1.cs" />
     <Compile Include="ChapterOne\moreCode.cs" />
     <Compile Include="ChapterOne\Person.cs" />
     <Compile Include="Program.cs" />
