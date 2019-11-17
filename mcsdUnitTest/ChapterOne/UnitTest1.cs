@@ -18,7 +18,7 @@ namespace caMcsdPractice.ChapterOne.Tests
             Assert.AreEqual((byte)chapterone.mxolisi.excited, returnVar);
         }
 
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
+        [TestMethod]
         public void TestIsPalindrome_ShouldReturnTrue()
         {
             //Arrange
@@ -27,6 +27,27 @@ namespace caMcsdPractice.ChapterOne.Tests
             var result=mxolisi.IsPalindromeSuperFunctional("kayak");
             //Assert
             Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestIsPalindrome_ShouldReturnFalse()
+        {
+            //Arrange
+            Class1 mxolisi = new Class1();
+            //Act
+            var result = mxolisi.IsPalindromeSuperFunctional("mxolisi");
+            //Assert
+            Assert.IsTrue(!result);
+        }
+
+        [TestMethod]
+        public void RunCode()
+        {
+            //Arrange
+            BitwiseOperators mxolisi = new BitwiseOperators();
+            //Act
+            mxolisi.UnaryVariantOperator();
+            //Assert
         }
     }
 }

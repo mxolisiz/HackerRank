@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChapterOne\BitwiseOperators.cs" />
     <Compile Include="ChapterOne\chapterone.cs" />
     <Compile Include="ChapterOne\Class1.cs" />
     <Compile Include="ChapterOne\moreCode.cs" />
