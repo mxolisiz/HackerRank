@@ -49,5 +49,12 @@ namespace caMcsdPractice.ChapterOne.Tests
             mxolisi.UnaryVariantOperator();
             //Assert
         }
+
+        [TestMethod]
+        public void RunTypesBookPaging()
+        {
+            CsharpTypes csharpTypes = new ChapterOne.CsharpTypes();
+            
+        }
     }
 }
