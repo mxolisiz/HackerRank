@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace caMcsdPractice.ChapterOne
 {
@@ -81,7 +82,17 @@ namespace caMcsdPractice.ChapterOne
             return theNUmbers;
         }
 
-
+        /// <summary>
+        /// C#8 pattern matching
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
+        static string Display(object o) => o switch
+        {
+            Point { X: 0, Y: 0 } => "origin",
+            Point { X: var x, Y: var y } => $"({x}, {y})",
+            _ => "unknown"
+        };
 
         class Employee : Person
         {

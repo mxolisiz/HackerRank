@@ -1,7 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using caMcsdPractice.ChapterOne;
 
-
+/// <summary>
+/// Some tests just run code and not 'test'
+/// </summary>
 namespace caMcsdPractice.ChapterOne.Tests
 {
     [TestClass()]
@@ -54,7 +56,14 @@ namespace caMcsdPractice.ChapterOne.Tests
         public void RunTypesBookPaging()
         {
             CsharpTypes csharpTypes = new ChapterOne.CsharpTypes();
-            
+            csharpTypes.PageTheBook();
+        }
+
+        [TestMethod]
+        public void RunInstanceAndStaticValues()
+        {
+            CsharpTypes csharpTypes = new ChapterOne.CsharpTypes();
+            csharpTypes.ToggleInstanceAndStaticValues();
         }
     }
 }
