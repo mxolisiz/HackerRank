@@ -83,7 +83,7 @@ namespace caMcsdPractice.ChapterOne
         }
 
         /// <summary>
-        /// C#8 pattern matching
+        /// Error	CS8370	Feature 'recursive patterns' is not available in C# 7.3. Please use language version 8.0 or greater.
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
