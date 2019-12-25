@@ -63,6 +63,10 @@
       <Project>{B06F5323-491E-4E20-9498-0F4935F63A36}</Project>
       <Name>caMcsdPractice</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ConsoleApp1\ConsoleApp1.csproj">
+      <Project>{21ebefa5-4b95-495a-a2da-34566388ef91}</Project>
+      <Name>ConsoleApp1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

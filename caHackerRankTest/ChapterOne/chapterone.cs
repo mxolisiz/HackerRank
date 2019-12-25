@@ -89,10 +89,31 @@ namespace caMcsdPractice.ChapterOne
         /// <returns></returns>
         static string Display(object o) => o switch
         {
-            Point { X: 0, Y: 0 } => "origin",
-            Point { X: var x, Y: var y } => $"({x}, {y})",
-            _ => "unknown"
+            Point { X: 0, Y: 0 } => "It's the center my guy!",
+            Point { X: var x, Y: var y } => $"Its {x} and {y} !!!!",
+            _ => "No!"
         };
+
+
+        static string DisplayTest(object o)
+        {
+
+            switch (o)
+            {
+
+                default:
+                    break;
+            }
+
+            var result= o switch
+            {
+                Point { X: 0, Y: 0 } => "It's the center my guy!",
+                Point { X: var x, Y: var y } => $"Its {x} and {y} !!!!",
+                _ => "Bricks, Andizi!"
+            };
+
+            return result;
+        }
 
         class Employee : Person
         {

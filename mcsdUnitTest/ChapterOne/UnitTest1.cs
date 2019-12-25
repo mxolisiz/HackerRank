@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using caMcsdPractice.ChapterOne;
+using ConsoleApp1;
 
 /// <summary>
 /// Some tests just run code and not 'test'
@@ -32,6 +33,16 @@ namespace caMcsdPractice.ChapterOne.Tests
         }
 
         [TestMethod]
+        public void TestpatternMatching()
+        {
+            //Arrange
+            Class1 mxolisi = new Class1();
+            //Act
+            mxolisi.PatternMatching("mxo is mxo");
+            //Assert
+        }
+
+        [TestMethod]
         public void TestIsPalindrome_ShouldReturnFalse()
         {
             //Arrange
@@ -40,6 +51,17 @@ namespace caMcsdPractice.ChapterOne.Tests
             var result = mxolisi.IsPalindromeSuperFunctional("mxolisi");
             //Assert
             Assert.IsTrue(!result);
+        }
+
+        [TestMethod]
+        public void TestValuetypes()
+        {
+            //Arrange
+            Class1 mxolisi = new Class1();
+            //Act 
+            mxolisi.valueTypes();
+            //Assert
+
         }
 
         [TestMethod]
@@ -64,6 +86,14 @@ namespace caMcsdPractice.ChapterOne.Tests
         {
             CsharpTypes csharpTypes = new ChapterOne.CsharpTypes();
             csharpTypes.ToggleInstanceAndStaticValues();
+        }
+
+
+        [TestMethod]
+        public void LehakoeLabyrnth()
+        {
+            ConsoleApp1.Program c = new Program();
+            c.method();
         }
     }
 }
